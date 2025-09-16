@@ -1,0 +1,32 @@
+﻿00 Click
+01 K1 in
+02 K1 out
+03 K2 in (unused)
+04 K2 out (unused)
+05 Snare top
+06 Snare bottom
+07 Tom 1
+08 Tom 2
+09 Tom 3
+10 Tom 4 (unused)
+11 HiHat
+12 Overhead L
+13 Overhead R
+14 Drum Mix FOH L
+15 Drum Mix FOH R
+16 Bass
+17 Guitar 1 Mono (unused)
+18 Guitar 2 Stereo L
+19 Guitar 2 Stereo R
+20 Keyboards L
+21 Keyboards R
+22 Vox Lead
+23 Vox Backings Alson
+24 Vox Backings Bo
+25 Vox Backings Mad
+26 Samples L or Mono
+27 Samples R (unused)
+28 (unused)
+29 (unused)
+30 (unused)
+31 (unused)

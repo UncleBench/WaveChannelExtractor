@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34902.65
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaveChannelExtractor.Console", "WaveChannelExtractor.Console\WaveChannelExtractor.Console.csproj", "{73B90585-9F08-47D4-9D39-05A1F7497E3C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B90585-9F08-47D4-9D39-05A1F7497E3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B90585-9F08-47D4-9D39-05A1F7497E3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B90585-9F08-47D4-9D39-05A1F7497E3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B90585-9F08-47D4-9D39-05A1F7497E3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B50C4A29-18EA-450E-AF0F-CF4B01A8B186}
+	EndGlobalSection
+EndGlobal
