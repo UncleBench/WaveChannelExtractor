@@ -10,18 +10,11 @@ namespace WaveChannelExtractor.Console
         {
             string inputFile = null;
             string outputDir = null;
-            bool skipUnused = false;
-            bool overwriteOutput = false;
 
             // Parse CLI args
             foreach (var arg in args)
             {
-                if (arg.StartsWith("--"))
-                {
-                    if (arg == "--skip-unused") skipUnused = true;
-                    if (arg == "--overwrite") overwriteOutput = true;
-                }
-                else if (inputFile == null) inputFile = arg;
+                if (inputFile == null) inputFile = arg;
                 else if (outputDir == null) outputDir = arg;
             }
 
@@ -82,17 +75,8 @@ namespace WaveChannelExtractor.Console
             // Handle existing output directory
             if (Directory.Exists(outputDir))
             {
-                if (overwriteOutput)
-                {
-                    Directory.Delete(outputDir, true);
-                    System.Console.WriteLine($"Deleted existing output directory: {outputDir}");
-                }
-                else
-                {
-                    System.Console.WriteLine($"Output directory already exists: {outputDir}");
-                    System.Console.WriteLine("Use --overwrite to allow deleting it.");
-                    return;
-                }
+                Directory.Delete(outputDir, true);
+                System.Console.WriteLine($"Deleted existing output directory: {outputDir}");
             }
 
             // Load channel config
@@ -118,7 +102,6 @@ namespace WaveChannelExtractor.Console
                 ChannelExtractor.Extract(
                     inputFile,
                     outputDir,
-                    skipUnused,
                     channelAssignments,
                     cts.Token,
                     ReportProgress);
@@ -126,7 +109,7 @@ namespace WaveChannelExtractor.Console
                 System.Console.WriteLine("\n\nExtraction complete.");
 
                 System.Console.WriteLine("\nExtracted channel files:");
-                foreach (var ch in ChannelExtractor.GetOutputFilePaths(outputDir, channelAssignments, skipUnused))
+                foreach (var ch in ChannelExtractor.GetOutputFilePaths(outputDir, channelAssignments))
                 {
                     System.Console.WriteLine($"- {ch}");
                 }

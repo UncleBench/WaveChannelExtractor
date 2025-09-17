@@ -108,9 +108,12 @@
   <ItemGroup>
     <Compile Include="ChannelConfigLoader.cs" />
     <Compile Include="ChannelExtractor.cs" />
+    <Compile Include="ChannelGroup.cs" />
+    <Compile Include="ChannelInfo.cs" />
     <Compile Include="ExtractionProgress.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StereoGroup.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
